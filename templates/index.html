@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<p class="text-center">Choose a story template:</p>
+<div class="list-group">
+  {% for key, story in templates.items() %}
+    <a href="{{ url_for('story_form', story_id=key) }}" class="list-group-item list-group-item-action">
+      Story {{ key }}
+    </a>
+  {% endfor %}
+</div>
+{% endblock %}

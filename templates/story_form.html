@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Fill in the blanks for Story {{ story_id }}</h3>
+<form method="POST">
+  {% if story_id == "1" %}
+    <input class="form-control mb-2" name="name" placeholder="Name" required>
+    <input class="form-control mb-2" name="adjective1" placeholder="Adjective" required>
+    <input class="form-control mb-2" name="adjective2" placeholder="Another Adjective" required>
+    <input class="form-control mb-2" name="bird1" placeholder="Type of Bird" required>
+    <input class="form-control mb-2" name="location1" placeholder="Location" required>
+  {% elif story_id == "2" %}
+    <input class="form-control mb-2" name="name" placeholder="Name" required>
+    <input class="form-control mb-2" name="adjective1" placeholder="Adjective" required>
+    <input class="form-control mb-2" name="animal1" placeholder="Animal" required>
+    <input class="form-control mb-2" name="adverb1" placeholder="Adverb" required>
+    <input class="form-control mb-2" name="verb1" placeholder="Verb" required>
+    <input class="form-control mb-2" name="bodypart1" placeholder="Body Part" required>
+  {% elif story_id == "3" %}
+    <input class="form-control mb-2" name="name" placeholder="Name" required>
+    <input class="form-control mb-2" name="adjective1" placeholder="Adjective" required>
+    <input class="form-control mb-2" name="time1" placeholder="Time/Event" required>
+    <input class="form-control mb-2" name="verb1" placeholder="Verb" required>
+    <input class="form-control mb-2" name="place1" placeholder="Place" required>
+  {% endif %}
+  <button type="submit" class="btn btn-primary mt-2">Generate Story</button>
+</form>
+{% endblock %}

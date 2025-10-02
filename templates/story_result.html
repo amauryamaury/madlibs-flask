@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="alert alert-success">
+  <h4>Your Story:</h4>
+  <p>{{ story }}</p>
+</div>
+<a href="{{ url_for('index') }}" class="btn btn-secondary">Back to Home</a>
+{% endblock %}
