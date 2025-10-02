@@ -1,0 +1,22 @@
+# 🎨 Flask MadLibs Story Generator
+
+An interactive MadLibs web app built with **Python (Flask)**, **HTML/CSS**, and **Bootstrap**.  
+Users can choose a story template, fill in words, and generate a custom story in the browser.  
+
+## Features
+- 3 story templates (Cold November Day, Zoo Day, Crazy Family)
+- User input via HTML forms
+- Dynamic story generation using Flask + Jinja2
+- Custom CSS styling (rainbow header) with Bootstrap integration
+
+## Tech Stack
+- Python, Flask
+- HTML, CSS, Bootstrap
+- Ready for deployment on Render
+
+## Run Locally
+```bash
+git clone https://github.com/YourName/flask-madlibs.git
+cd flask-madlibs
+py -m pip install flask gunicorn
+py -m flask run
